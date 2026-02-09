@@ -52,7 +52,7 @@
 
     /* Hero Section */
     .hero {
-      background: url('https://github.com/AGgeoviz/AGgeoviz.github.io/blob/main/AdaptGeoIcon.png?raw=true') no-repeat center center/cover;
+      background: url('https://raw.githubusercontent.com/AGgeoviz/AGgeoviz.github.io/refs/heads/main/AdaptGeoIcon.png') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 6rem 2rem;
@@ -67,6 +67,33 @@
       max-width: 600px;
       margin: 0 auto;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    /* Featured Images Section */
+    .featured-images {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .featured-images h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .image-grid a:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     /* Testimonials Section */
@@ -162,6 +189,16 @@
   <p>A Clean Cloud is the leading plant-based nicotine tobacco and smoke shop in Ann Arbor, MI, serving Washtenaw and Genesee counties since 2011.</p>
 </section>
 
+<section class="featured-images">
+  <h2>Featured Products</h2>
+  <div class="image-grid">
+    <a href="#"><img src="https://raw.githubusercontent.com/AGgeoviz/AGgeoviz.github.io/refs/heads/main/AdaptGeoIcon.png" alt="Product 1"></a>
+    <a href="#"><img src="https://raw.githubusercontent.com/AGgeoviz/AGgeoviz.github.io/refs/heads/main/AdaptGeoIcon.png" alt="Product 2"></a>
+    <a href="#"><img src="https://raw.githubusercontent.com/AGgeoviz/AGgeoviz.github.io/refs/heads/main/AdaptGeoIcon.png" alt="Product 3"></a>
+    <a href="#"><img src="https://raw.githubusercontent.com/AGgeoviz/AGgeoviz.github.io/refs/heads/main/AdaptGeoIcon.png" alt="Product 4"></a>
+  </div>
+</section>
+
 <section class="testimonials">
   <h2>Testimonials</h2>
   <div class="testimonial-list">
@@ -190,6 +227,7 @@
 
 </body>
 </html>
+
 
 
 
